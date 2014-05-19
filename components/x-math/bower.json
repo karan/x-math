@@ -1,0 +1,27 @@
+
+{
+  "name": "x-math",
+  "version": "0.0.1",
+  "authors": [
+    "Karan Goel <karan@goel.im>"
+  ],
+  "description": "Polymer element to embed beautiful math using just HTML.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "math",
+    "web-components",
+    "latex",
+    "mathjax",
+    "tex"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  }
+}

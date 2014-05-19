@@ -1,0 +1,36 @@
+{
+  "name": "x-math",
+  "authors": [
+    "Karan Goel <karan@goel.im>"
+  ],
+  "description": "Polymer element to embed beautiful math using just HTML.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "math",
+    "web-components",
+    "latex",
+    "mathjax",
+    "tex"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  },
+  "homepage": "https://github.com/karan/x-math",
+  "_release": "63e017bfa2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "63e017bfa2ef5f421bae86af62f628654c8ab1a1"
+  },
+  "_source": "git://github.com/karan/x-math.git",
+  "_target": "master",
+  "_originalSource": "karan/x-math",
+  "_direct": true
+}

@@ -1,0 +1,48 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="imports.html">
+
+<!--
+Polymer element to embed beautiful math using just HTML. [**Live demo**](../x-math/demo.html)
+
+<iframe src="http://ghbtns.com/github-btn.html?user=karan&repo=x-math&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+
+##### Example
+  
+    <x-math>\frac{a}{b}</x-math>
+
+  Or make this math editable
+
+    <x-math editable>\frac{a}{b}</x-math>    
+
+@element x-math
+@blurb Polymer element to embed beautiful math using just HTML.
+@status alpha
+@homepage http://karan.github.io/x-math
+-->
+<polymer-element name="x-math" attributes="editable">
+
+  <template>
+    <span id="math"></span>
+  </template>
+
+  <script>
+
+      /**
+       * Makes the rendered math content editable by the client.
+       * 
+       * @attribute editable
+       */
+
+    Polymer({
+      ready: function() {
+        if (this.editable !== '') {
+          $('<span>' + this.textContent + '</span>').appendTo(this.$.math).mathquill();
+        } else {
+          $('<span>' + this.textContent + '</span>').appendTo(this.$.math).mathquill('editable');
+        }
+      }
+    });
+
+  </script>
+
+</polymer-element>
