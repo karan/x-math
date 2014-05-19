@@ -28,11 +28,7 @@
     figure {
       padding: 10px;
       width: 50%;
-      margin: 0 auto 30px;
-    }
-
-    x-math {
-      padding: 20px;
+      margin: 0 auto 10px;
     }
 
     .share {
@@ -43,7 +39,7 @@
 </head>
 <body unresolved>
 
-  <h1>&lt;x-meme&gt;</h1>
+  <h1>&lt;x-math&gt;</h1>
   
   <div class="share">
     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://karan.github.io/x-math/" data-text="Embed beautiful math using just HTML" data-via="TheKaranGoel" data-size="large">Tweet</a>
@@ -51,19 +47,41 @@
   </div>
 
   <figure>
+    <h2>Simple math</h2>
     <x-math>\frac{a}{b}</x-math>
     <pre>&lt;x-math&gt;\frac{a}{b}&lt;/x-math&gt;</pre>
   </figure>
 
   <figure>
+    <h2>Complex math</h2>
     <x-math>\frac{d}{dx}\sqrt{x} = \frac{d}{dx}x^{\frac{1}{2}} = \frac{1}{2}x^{-\frac{1}{2}} = \frac{1}{2\sqrt{x}}</x-math>
     <pre>&lt;x-math&gt;\frac{d}{dx}\sqrt{x} = \frac{d}{dx}x^{\frac{1}{2}} = \frac{1}{2}x^{-\frac{1}{2}} = \frac{1}{2\sqrt{x}}&lt;/x-math&gt;</pre>
   </figure>
 
   <figure>
+    <h2>Editable math</h2>
     <x-math editable>\frac{a}{b}</x-math>
     <pre>&lt;x-math editable&gt;\frac{a}{b}&lt;/x-math&gt;</pre>
   </figure>
+
+  <figure>
+    <h2>Inline math</h2>
+    <p>Typing <code>&lt;x-math&gt;\sqrt x&lt;/x-math&gt;</code> renders <x-math>\sqrt x</x-math>.</p>
+  </figure>
+
+  <figure>
+    <h2>More examples</h2>
+    <x-math>x = a_0 + \cfrac{1^2}{a_1
+          + \cfrac{2^2}{a_2
+          + \cfrac{3^2}{a_3 + \cfrac{4^4}{a_4 + \cdots}}}}</x-math>
+  </figure>
+
+  <figure>
+    <h2>More examples</h2>
+    <x-math>\alpha^{7} = \frac {3}{5} + 7 \cdot \left(\frac {3}{5}\right)^{5/7} + 21 \cdot \left(\frac {3}{5}\right)^{3/7} + 35 \cdot \left(\frac {3}{5}\right)^{1/7} + 35 \cdot \left(\frac {3}{5}\right)^{-1/7} + 21 \cdot \left(\frac {3}{5}\right)^{-3/7} + 7 \cdot \left(\frac {3}{5}\right)^{-5/7} + \left(\frac {3}{5}\right)^{-1}</x-math>
+  </figure>
+
+  <x-math>\(\pi=\sum\limits_{n=0}^{+\infty} \frac{{(n!)^2 2^{n+1}}}{(2n+1)!}\)</x-math>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
