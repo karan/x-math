@@ -8,21 +8,60 @@
   <link rel="import" href="x-math.html">
 
   <style>
+    body {
+      font-family: helvetica, serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      letter-spacing: 4px;
+    }
+
+    pre {
+      text-align: center;
+      font-size: 1.2em;
+      padding-bottom: 1em;
+      word-wrap: break-word;
+    }
+
+    figure {
+      padding: 10px;
+      width: 50%;
+      margin: 0 auto 30px;
+    }
+
     x-math {
-      display: block;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    .share {
+      margin-bottom: 50px;
     }
   </style>
 
 </head>
 <body unresolved>
 
+  <h1>&lt;x-meme&gt;</h1>
+  
+  <div class="share">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://karan.github.io/x-math/" data-text="Embed beautiful math using just HTML" data-via="TheKaranGoel" data-size="large">Tweet</a>
+    <iframe src="http://ghbtns.com/github-btn.html?user=karan&repo=x-math&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+  </div>
+
   <figure>
     <x-math>\frac{a}{b}</x-math>
+    <pre>&lt;x-math&gt;\frac{a}{b}&lt;/x-math&gt;</pre>
   </figure>
 
   <figure>
     <x-math>\frac{d}{dx}\sqrt{x} = \frac{d}{dx}x^{\frac{1}{2}} = \frac{1}{2}x^{-\frac{1}{2}} = \frac{1}{2\sqrt{x}}</x-math>
+    <pre>&lt;x-math&gt;\frac{d}{dx}\sqrt{x} = \frac{d}{dx}x^{\frac{1}{2}} = \frac{1}{2}x^{-\frac{1}{2}} = \frac{1}{2\sqrt{x}}&lt;/x-math&gt;</pre>
   </figure>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
 </html>

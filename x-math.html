@@ -2,55 +2,31 @@
 <link rel="import" href="imports.html">
 
 <!--
-Element providing solution to no problem in particular.
+Polymer element to embed beautiful math using just HTML. [**Live demo**](../x-math/demo.html)
+
+<iframe src="http://ghbtns.com/github-btn.html?user=karan&repo=x-math&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
 
 ##### Example
 
-    <x-math></x-math>
+    <x-math>\frac{a}{b}</x-math>
 
 @element x-math
-@blurb Element providing solution to no problem in particular.
+@blurb Polymer element to embed beautiful math using just HTML.
 @status alpha
-@url github.io
+@homepage http://karan.github.io/x-math
 -->
 <polymer-element name="x-math">
 
   <template>
-
+    <span id="math"></span>
   </template>
 
   <script>
 
     Polymer({
-      /**
-       * The `noevent` event is not actually fired from here,
-       * we document it as an example of documenting events.
-       * 
-       * @event noevent
-       */
-
-      /**
-       * The `notitle` attribute does not yet have a purpose.
-       * 
-       * @attribute notitle
-       * @type string
-       */
-      notitle: '',
-
       ready: function() {
-        $('<span>' + this.textContent + '</span>').appendTo('body').mathquill();
-      },
-
-      /**
-       * The `task` method does no work at this time.
-       * 
-       * @method task
-       * @return {Object} Returns undefined.
-       * @param {String} dummy Serves no purpose today.
-       */
-      task: function(dummy) {
+        $('<span>' + this.textContent + '</span>').appendTo(this.$.math).mathquill();
       }
-
     });
 
   </script>
