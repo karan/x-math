@@ -1,0 +1,58 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="imports.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <x-math></x-math>
+
+@element x-math
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@url github.io
+-->
+<polymer-element name="x-math">
+
+  <template>
+
+  </template>
+
+  <script>
+
+    Polymer({
+      /**
+       * The `noevent` event is not actually fired from here,
+       * we document it as an example of documenting events.
+       * 
+       * @event noevent
+       */
+
+      /**
+       * The `notitle` attribute does not yet have a purpose.
+       * 
+       * @attribute notitle
+       * @type string
+       */
+      notitle: '',
+
+      ready: function() {
+        $('<span>' + this.textContent + '</span>').appendTo('body').mathquill();
+      },
+
+      /**
+       * The `task` method does no work at this time.
+       * 
+       * @method task
+       * @return {Object} Returns undefined.
+       * @param {String} dummy Serves no purpose today.
+       */
+      task: function(dummy) {
+      }
+
+    });
+
+  </script>
+
+</polymer-element>
